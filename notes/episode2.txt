@@ -1,0 +1,8 @@
+-> npm not stands for node package manager
+-> package.json is configuration for npm
+-> webpack, parcel are differnt bundlers in npm
+-> `npm install -D parcel` -D stands for development envrionment
+-> difference between ^ and ~ is , with carret it will upgrade automatically in minor version where as tilde it can upgrade automatically in major version.It is safer to use carret.
+-> our project depends on some dependencies , the dependencies depends on other dependencies known as transitive dependencies
+-> package.json and package-lock.json can regenerate node modules.
+-> npx for excuting package
