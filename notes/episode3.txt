@@ -1,0 +1,5 @@
+-> scripts are short hands for command to start server .It is convention in industry.
+-> `npm start` same as `npm run start`
+-> jsx is html like syntax
+-> jsx transpiles before it reaches js engine - parcel -> babe
+-> babel transforms jsx code to react.createElement internally
