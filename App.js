@@ -14,25 +14,45 @@ Footer
 const styleCard = {
   backgroundColor: "#f0f0f0",
 }
-const RestroContainer = () =>{
+const RestroCard = (props) =>{
+
+    const {name, cusinine, rating, eta} = props.resData;
     return <div className='res-card' style={styleCard}>
       <img className="res-pic" src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/p2k9r9zkeqcjhohsgrfu'></img>
-      <h3>Meghana Foods</h3>
-      <h4>Indian, North Indian, Asian</h4>
-      <h5>4.4stars</h5>
+      <h3>{name}</h3>
+      <h4>{cusinine}</h4>
+      <h5>{rating}</h5>
+      <h5>{eta}</h5>
     </div>
 }
+const resData=[
+  {
+    id: "123",
+    name: "Meghana Foods",
+    cusinine: "Indian, Souhtindian",
+    rating: "4.4",
+    eta: "20",
+
+  },
+  {
+    id: "124",
+    name: "KFC",
+    cusinine: "Italian",
+    rating: "4.3",
+    eta: "40",
+
+  }
+];
 const Body = () =>{
   return <div className='body'>
     <div className='search'>Search</div>
-    <div className='restro-container'>
-      <RestroContainer/>
-      <RestroContainer/>
-      <RestroContainer/>
-      <RestroContainer/>
-      <RestroContainer/>
-      <RestroContainer/>
-      <RestroContainer/>
+    <div className='restro-container'>{
+        resData.map((res)=>
+          <RestroCard key={res.id} resData={res}/>
+        )
+      }
+
+    
     </div>
   </div>
 }
