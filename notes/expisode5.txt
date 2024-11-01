@@ -1,0 +1,10 @@
+- separate file for components and constants for better understanding and maintainability
+- understanding difference between default export and named export
+- create folder structure src -> utils for common code
+- component for component code
+- for one file there will be only default export
+- when need to export multiple need to use named export
+- react use super power variables that is localstate
+- from react use usestate and useeffect functions to set , use state
+- react run reconciliation algorithm (react fiber) to find the differences between virtual DOM.
+- react fiber updated algorithm  in react 16 to find the virtual DOM 

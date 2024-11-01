@@ -1,0 +1,5 @@
+-- config  driven UI
+-- props to component
+-- dynamic rendring from object to props
+-- keys in react component
+-- when iteration over Component it is mandatiry to use key , it is not recommended index as key
