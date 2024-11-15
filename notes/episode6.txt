@@ -1,0 +1,4 @@
+-- calling swiggy api
+-- useState is used for managing state in stateless component
+-- useEffect are fundamental hook that enable to you manage state and handle sideeffect
+-- state variables help to rerender components when data changes
